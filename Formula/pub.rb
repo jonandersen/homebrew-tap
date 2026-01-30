@@ -5,21 +5,21 @@
 class Pub < Formula
   desc "CLI for the Public.com trading API"
   homepage "https://github.com/jonandersen/public-cli"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jonandersen/public-cli/releases/download/v0.4.0/pub_0.4.0_darwin_amd64.tar.gz"
-      sha256 "18737f27d1ad5e8f1f86f019a974f952ee4c7e689ef5ce3fcc82467274e9cea0"
+      url "https://github.com/jonandersen/public-cli/releases/download/v0.5.0/pub_0.5.0_darwin_amd64.tar.gz"
+      sha256 "f1e77321382972f5335d940e71f97dacddbc6c9881cfa72132247408614e7d42"
 
       def install
         bin.install "pub"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jonandersen/public-cli/releases/download/v0.4.0/pub_0.4.0_darwin_arm64.tar.gz"
-      sha256 "188018ae81abd895dc1b366ab1980178c3401a5de5847dbbf42841cf87469f24"
+      url "https://github.com/jonandersen/public-cli/releases/download/v0.5.0/pub_0.5.0_darwin_arm64.tar.gz"
+      sha256 "2bfab7a45fa247d5d0135cad024331de564d90ee4032e54dbfc52ee8275cd5a1"
 
       def install
         bin.install "pub"
@@ -29,15 +29,15 @@ class Pub < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jonandersen/public-cli/releases/download/v0.4.0/pub_0.4.0_linux_amd64.tar.gz"
-      sha256 "96bfbe2877d4c81abb459c68072d15d36e69eba025a6bd033eb541d38d1fc291"
+      url "https://github.com/jonandersen/public-cli/releases/download/v0.5.0/pub_0.5.0_linux_amd64.tar.gz"
+      sha256 "134647e93b561850b87f6b310b3dad8ac0f370266bb477438e552fc73cd1b4e4"
       def install
         bin.install "pub"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jonandersen/public-cli/releases/download/v0.4.0/pub_0.4.0_linux_arm64.tar.gz"
-      sha256 "05151a4966a314ef1472925acdc66869e476ec0129aebf0244aa4469ba277d0b"
+      url "https://github.com/jonandersen/public-cli/releases/download/v0.5.0/pub_0.5.0_linux_arm64.tar.gz"
+      sha256 "0fafe7ea7c3f7e7e79dd7f89af1937424fc5bf002b373f2963b45aed9037faf3"
       def install
         bin.install "pub"
       end
